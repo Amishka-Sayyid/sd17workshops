@@ -1,0 +1,22 @@
+#box {
+  display: block;
+  background-color: blueviolet;
+  width: 20rem;
+  height: 13rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+button {
+  display: block;
+  width: 12rem;
+  height: 5rem;
+  font-size: 1rem;
+}
+
+img {
+  display: block;
+  width: 15rem;
+}
