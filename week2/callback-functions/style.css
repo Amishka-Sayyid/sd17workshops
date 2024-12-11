@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#box {
+  background-color: bisque;
+  width: 20rem;
+  height: 20rem;
+  padding: 2rem;
+  font-size: 3rem;
+  display: flex;
+  border-radius: 3rem;
+  align-items: center;
+}
