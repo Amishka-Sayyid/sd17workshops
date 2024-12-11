@@ -53,7 +53,10 @@ img {
   display: flex;
   height: 17rem;
   max-width: 100%;
-  background-size: cover;
+}
+video {
+  height: 20rem;
+  width: 20rem;
 }
 
 footer {
