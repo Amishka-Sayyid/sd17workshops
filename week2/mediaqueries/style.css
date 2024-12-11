@@ -15,6 +15,7 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  font-size: 1.1rem;
 }
 a {
   text-decoration: none;
@@ -46,6 +47,7 @@ main {
   justify-content: center;
   height: 30rem;
   width: 30rem;
+  font-size: 1rem;
 }
 img {
   display: flex;
@@ -58,4 +60,45 @@ footer {
   padding: 2rem;
   text-align: center;
   background-color: #f7d6c7;
+}
+
+@media (max-width: 600px) {
+  header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+    gap: 2rem;
+  }
+  header h1 {
+    align-self: center;
+    font-size: 2rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .sections {
+    border-radius: 5rem;
+    padding: 2rem;
+    background-color: #f7e1d2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40rem;
+    width: 30rem;
+    font-size: 1.4rem;
+  }
+  footer {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f7d6c7;
+    font-size: 2rem;
+  }
 }
