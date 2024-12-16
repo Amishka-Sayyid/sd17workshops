@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./forms.js" defer></script>
+    <title>forms</title>
+  </head>
+  <body>
+    <h1>forms & validation</h1>
+    <form id="form">
+      <!-- <label for="email"> Email</label>
+      <input type="email" name="email" id="email" required />
+
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" required /> -->
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="location">Location</label>
+      <select name="location" id="location">
+        <option value="Norwich">Norwich</option>
+        <option value="Leicester">Leicester</option>
+        <option value="London">London</option>
+        <option value="Birmingham">Birmingham</option>
+        <option value="Nottingham">Nottingham</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="hobbies">Hobbies</label>
+      <input
+        type="text"
+        name="hobbies"
+        id="hobbies"
+        placeholder="what are your hobbies?"
+      />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

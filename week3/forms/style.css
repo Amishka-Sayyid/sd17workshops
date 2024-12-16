@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(244, 217, 184);
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: geneva;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+  gap: 1rem;
+}
