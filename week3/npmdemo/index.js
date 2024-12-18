@@ -34,3 +34,11 @@ console.log(warning("Warning!"));
 // console.log string substitution:
 const name = "Sindre";
 console.log(chalk.green("Hello "), warning(name));
+
+//random strings
+
+console.log(
+  chalk.bgGreen("hello , how are you?"),
+  chalk.bgMagenta("my Name is Amina."),
+  chalk.bgWhite("Nice to meet you.")
+);
