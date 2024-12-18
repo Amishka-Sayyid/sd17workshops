@@ -1,0 +1,21 @@
+{
+  "name": "testing-practice",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx vitest",
+    "coverage": "vitest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vitest": "^2.1.8"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^2.1.8"
+  }
+}
