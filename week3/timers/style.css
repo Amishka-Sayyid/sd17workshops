@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: bisque;
+}
+#colorBox {
+  border: 1px solid black;
+  width: 40vh;
+  height: 40vh;
+  background-color: white;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rem;
+}
