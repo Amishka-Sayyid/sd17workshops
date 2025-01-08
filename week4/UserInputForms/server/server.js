@@ -2,10 +2,9 @@ import express from "express";
 import cors from "cors";
 
 const app = express();
-const port = 8080;
 
-app.listen(port, function () {
-  console.log(`sever running on ${port}`);
+app.listen(8080, function () {
+  console.log(`sever running on 8080`);
 });
 
 app.use(express.json()); // ensure this is present so the server can understand JSON data
