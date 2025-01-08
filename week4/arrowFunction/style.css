@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#foxApi {
+  height: 60vh;
+  width: 60vh;
+  border-radius: 3rem;
+  border: 1px solid grey;
+}
+
+#foxApi:hover,
+#foxApi:focus {
+  border: rgb(132, 132, 219);
+  box-shadow: 0 0 15px 15px rgb(134, 215, 226);
+}
+
+#foxApi .foxImage {
+  height: 60vh;
+  width: 60vh;
+  border-radius: 3rem;
+  object-fit: cover;
+}
