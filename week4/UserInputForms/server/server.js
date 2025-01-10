@@ -10,7 +10,7 @@ app.listen(8080, function () {
 app.use(express.json()); // ensure this is present so the server can understand JSON data
 app.use(cors());
 
-app.post("/messages", express.json(), (req, res) => {
+app.post("/messages", (req, res) => {
   console.log("req.body", req.body);
   res.json({ status: "Message received!" });
 });
