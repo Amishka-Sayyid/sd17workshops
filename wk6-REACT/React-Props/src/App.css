@@ -1,5 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
 #root {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3rem;
+}
+
+img {
+  width: 15rem;
+  height: 10rem;
+  border-radius: 1rem;
+  object-fit: cover;
+  margin: 2rem;
+}
+img:hover {
+  transform: scale(1.2);
+}
+#img {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+figure {
+  border: 1px solid lightgray;
+  padding: 10px;
+  max-width: fit-content;
+  text-align: center;
+}
+
+figcaption {
+  color: grey;
+  font-family: Arial;
 }
