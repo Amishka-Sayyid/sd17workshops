@@ -1,0 +1,36 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#root h3 {
+  font-size: 2rem;
+}
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 1rem;
+  margin: 1rem;
+  height: 10vh;
+  width: 20vh;
+  font-size: 1.6vw;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #bad5de;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: black;
+  border-radius: 4rem;
+}
+button:hover {
+  border-color: #333376;
+  background-color: rgb(224, 234, 246);
+  transform: scale(1.3);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
