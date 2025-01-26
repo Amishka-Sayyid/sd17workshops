@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  background-color: #f2e0e0;
+  color: #787474;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  font-size: 1.8vw;
+}
+.nav a {
+  text-decoration: none;
+  color: #787474;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.nav a:hover {
+  transform: scale(1.2);
+  color: rgb(9, 9, 9);
+  background-color: rgb(230, 238, 240);
+}

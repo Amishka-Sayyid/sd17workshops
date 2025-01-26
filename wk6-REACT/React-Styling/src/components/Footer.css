@@ -1,0 +1,9 @@
+.footer {
+  place-content: center;
+  place-items: center;
+  background-color: beige;
+  background-color: #f2e0e0;
+  margin: auto;
+  width: 100%;
+  font-size: 1.3vw;
+}

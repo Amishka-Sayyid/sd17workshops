@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+#root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2vw;
+}
+body {
+  background-image: url("https://cdn.openart.ai/published/vwLm2f6z55E1S6LYPn5K/jLe02ipb_FhqQ_raw.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
