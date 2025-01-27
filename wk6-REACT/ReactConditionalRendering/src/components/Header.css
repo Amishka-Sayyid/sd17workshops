@@ -1,0 +1,25 @@
+.Header {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+.Menu {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  font-size: 2rem;
+}
+.Menu a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem;
+}
+
+a:hover {
+  color: brown;
+  background-color: antiquewhite;
+  border-radius: 1rem;
+  transform: scale(1.2);
+}
