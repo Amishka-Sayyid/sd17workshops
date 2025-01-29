@@ -30,8 +30,10 @@ a:hover {
 }
 h1 {
   font-size: 3.2em;
+  line-height: 1.1;
+  text-align: center;
 }
-h1,
+h6,
 h4 {
   line-height: 1.1;
   text-align: center;
@@ -63,4 +65,26 @@ button:focus-visible {
 }
 .main {
   min-height: 100vh;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 50%;
+  height: 3rem;
+  margin: auto;
+  margin-bottom: 1.5rem;
+}
+.singleLink {
+  color: #213547;
+  background-color: rgb(230, 238, 253);
+  padding: 1rem;
+  border-radius: 5rem;
+}
+.singleLink:hover {
+  background-color: #f9f9f9;
+  color: #213547;
 }
