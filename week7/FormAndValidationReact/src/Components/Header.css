@@ -1,0 +1,27 @@
+.Header {
+  margin: 1em;
+}
+.Header button {
+  background-color: rgb(205, 207, 211);
+}
+.Header button:hover {
+  background-color: rgb(242, 237, 246);
+}
+
+.Menu a {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: rgb(76, 100, 108);
+}
+.Menu {
+  border: 1px solid transparent;
+  width: 30%;
+  border-radius: 1rem;
+  text-align: center;
+  background-color: aliceblue;
+}
+.Menu a:hover {
+  background-color: rgb(204, 211, 217);
+}
