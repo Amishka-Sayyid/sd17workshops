@@ -27,6 +27,12 @@ export default function Header() {
             </div>
           ) : null}
         </div>
+
+        <h1>MySpecialPractice</h1>
+        <div className="headerpart3">
+          <button>register</button>
+          <button>log In</button>
+        </div>
       </nav>
     </>
   );

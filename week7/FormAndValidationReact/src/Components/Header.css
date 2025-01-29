@@ -1,27 +1,46 @@
 .Header {
-  margin: 1em;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
-.Header button {
-  background-color: rgb(205, 207, 211);
-}
-.Header button:hover {
-  background-color: rgb(242, 237, 246);
-}
-
 .Menu a {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   font-size: 1.2rem;
   text-decoration: none;
   color: rgb(76, 100, 108);
 }
+
 .Menu {
   border: 1px solid transparent;
-  width: 30%;
   border-radius: 1rem;
   text-align: center;
   background-color: aliceblue;
+  width: 8rem;
 }
 .Menu a:hover {
   background-color: rgb(204, 211, 217);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  height: 8rem;
+  justify-content: space-around;
+  align-items: center;
+
+  background-image: linear-gradient(
+    to bottom,
+    rgb(117, 187, 201),
+    rgb(232, 193, 163, 0)
+  );
+  width: 100%;
+}
+nav h1 {
+  font-size: 2rem;
+  align-self: flex-end;
+}
+.headerpart3 {
+  display: flex;
+  gap: 1rem;
 }
