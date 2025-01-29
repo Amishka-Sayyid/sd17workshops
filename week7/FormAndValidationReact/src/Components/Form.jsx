@@ -17,6 +17,8 @@ export function Form() {
   return (
     <>
       <div>
+        <h6>Handling “controlled” form input fields</h6>
+
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Name: </label>
           <input

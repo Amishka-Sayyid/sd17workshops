@@ -51,3 +51,12 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+.ptags {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main {
+  min-height: 100vh;
+}

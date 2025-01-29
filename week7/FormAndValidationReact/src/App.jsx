@@ -1,7 +1,10 @@
 import "./App.css";
 import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 import { Form } from "./Components/Form";
 import { MultipleInputForm } from "./Components/MultipleInputForm";
+import Section from "./Components/Section";
+import { Routes, Route } from "react-router-dom";
 
 export default function App() {
   return (
@@ -9,11 +12,16 @@ export default function App() {
       <Header />
       <h1>React: Forms and Validation</h1>
 
-      <h4>Handling “controlled” form input fields</h4>
-      <Form />
+      <div className="main">
+        <Section />
 
-      <h4>Handling multiple form fields</h4>
-      <MultipleInputForm />
+        <Routes>
+          <Route element={<Form />} path={"/Form1"} />
+          <Route element={<MultipleInputForm />} path={"/Form2"} />
+        </Routes>
+      </div>
+
+      <Footer />
     </>
   );
 }

@@ -12,18 +12,22 @@ export default function Header() {
 
   return (
     <>
-      <div className="Header">
-        <button onClick={handleVisibility}> Menu </button>
+      <nav>
+        <div className="Header">
+          <button onClick={handleVisibility}>
+            <i className="fa-solid fa-bars"></i>
+          </button>
 
-        {/* using tenary operator */}
-        {invisible ? (
-          <div className="Menu">
-            <a href="">Home</a>
-            <a href="">Form</a>
-            <a href="">Form Data</a>
-          </div>
-        ) : null}
-      </div>
+          {/* using tenary operator */}
+          {invisible ? (
+            <div className="Menu">
+              <a href="">Home</a>
+              <a href="">Form</a>
+              <a href="">Form Data</a>
+            </div>
+          ) : null}
+        </div>
+      </nav>
     </>
   );
 }

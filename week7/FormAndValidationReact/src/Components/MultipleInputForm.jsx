@@ -1,6 +1,6 @@
 //Handling multiple form fields
 //Form.jsx handles one input however that process if used on multiple inputs u will need to make  a new function and state value for each of the fields that is tedious hence the below steps is the best to use when having multiple inputs.
-
+import "/src/App.css";
 import { useState } from "react";
 
 export function MultipleInputForm() {
@@ -34,8 +34,7 @@ export function MultipleInputForm() {
         value={formValues.username}
         onChange={handleInputChange}
       />
-      <br />
-      <p>Current value is: {formValues.username}</p>
+
       <label htmlFor="email">Email: </label>
       <input
         type="text"
@@ -49,7 +48,10 @@ export function MultipleInputForm() {
       />
       <br />
 
-      <p>Current value is: {formValues.email}</p>
+      <div className="ptags">
+        <p>Current value is: {formValues.username}</p>
+        <p>Current value is: {formValues.email}</p>
+      </div>
       <button type="submit">Submit</button>
     </form>
   );
