@@ -23,3 +23,15 @@ nearly forgot the sql images
 
 _i just thought of it maybe i should put the fetch inside the handle submit function this then eleminates the issue i have of how it data was being saved in the db. ill do that tomorrow 😴 _
 this worked placing fetch inside the handleSubmit function.
+
+now i wish to delete empty strings 1st ill select to see them then delete
+![alt text](selectquery.jpg)
+
+![alt text](deletequery.jpg)
+
+final result
+![alt text](form2table.jpg)
+
+![alt text](finalimage1.jpg)
+
+![alt text](finalimage2.jpg)
