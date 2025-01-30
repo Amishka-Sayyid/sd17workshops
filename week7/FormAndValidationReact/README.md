@@ -15,3 +15,8 @@ overall i was able to apply the diffrent concepts in regards to saving the user 
 ![alt text](image.png)
 
 ![alt text](image-1.png)
+
+nearly forgot the sql images
+![alt text](form2.jpg)
+
+![alt text](form2insert.jpg)
