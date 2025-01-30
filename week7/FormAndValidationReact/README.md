@@ -21,4 +21,4 @@ nearly forgot the sql images
 
 ![alt text](form2insert.jpg)
 
-i just thought of it maybe i should put the fetch inside the handle submit function this then eleminates the issue i have of how it data was being saved in the db. ill do that tomorrow 😴 
+<!-- i just thought of it maybe i should put the fetch inside the handle submit function this then eleminates the issue i have of how it data was being saved in the db. ill do that tomorrow 😴  --> this worked placing fetch inside the handleSubmit function.

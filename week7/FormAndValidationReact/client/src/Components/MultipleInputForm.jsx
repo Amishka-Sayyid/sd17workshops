@@ -12,14 +12,6 @@ export function MultipleInputForm() {
   function handleSubmit(event) {
     event.preventDefault();
     console.log("The form values are", formValues);
-  }
-
-  function handleInputChange(event) {
-    setFormValues({
-      // the spread operator will add all existing values
-      ...formValues,
-      [event.target.name]: event.target.value, // then we add the new value using the form field "name" attribute and the value
-    });
 
     fetch("http://localhost:8080/new-data", {
       method: "POST",
@@ -29,6 +21,14 @@ export function MultipleInputForm() {
       body: JSON.stringify({ formValues }),
     });
     console.log(formValues);
+  }
+
+  function handleInputChange(event) {
+    setFormValues({
+      // the spread operator will add all existing values
+      ...formValues,
+      [event.target.name]: event.target.value, // then we add the new value using the form field "name" attribute and the value
+    });
   }
 
   const [items, setItems] = useState([]);
