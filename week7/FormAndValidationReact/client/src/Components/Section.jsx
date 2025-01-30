@@ -9,10 +9,10 @@ export default function Section() {
           Home
         </Link>
         <Link to={"/Form1"} className="singleLink">
-          SingleInputForm
+          Form1
         </Link>
         <Link to={"/Form2"} className="singleLink">
-          MultipleInputForm
+          Form2
         </Link>
       </div>
     </>

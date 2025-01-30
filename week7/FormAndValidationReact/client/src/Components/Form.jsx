@@ -7,12 +7,21 @@ export function Form() {
 
   function handleSubmit(event) {
     event.preventDefault();
+    console.log(username);
   }
 
   // handle form input field value being changed by user
   function handleInputChange(event) {
     setUserName(event.target.value);
   }
+
+  fetch("http://localhost:8080/form1Data", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ username }),
+  });
 
   return (
     <>

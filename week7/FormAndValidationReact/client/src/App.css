@@ -88,3 +88,24 @@ button:focus-visible {
   background-color: #f9f9f9;
   color: #213547;
 }
+
+.data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  width: 40%;
+  background-color: #a6aeaf;
+  margin: auto;
+}
+.datadiv {
+  width: 80%;
+  margin: auto;
+  min-height: 50vh;
+  border: 1px solid blue;
+  border-radius: 5rem;
+  display: flex;
+  flex-direction: column;
+}
