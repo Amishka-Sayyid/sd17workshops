@@ -16,7 +16,7 @@ nav {
 .footer {
   display: flex;
   flex-direction: row;
-  height: 8rem;
+  min-height: 5rem;
   justify-content: space-around;
   align-items: center;
 
@@ -26,6 +26,9 @@ nav {
     rgb(232, 193, 163, 0)
   );
   width: 100%;
+
+  position: relative;
+  bottom: 0;
 }
 
 .section {
