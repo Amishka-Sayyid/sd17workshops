@@ -9,9 +9,6 @@ export default function Header() {
           <button>
             <Link to={"/"}>Home</Link>
           </button>
-          <button>
-            <Link to={"/about"}>About</Link>
-          </button>
         </div>
         <h3>Workshop</h3>
         <div>
