@@ -1,6 +1,8 @@
 import express from "express";
-
 const app = express();
+
+// Middleware to parse JSON in the request body
+app.use(express.json());
 
 // your routes will go here...
 
@@ -16,9 +18,6 @@ app.get("/messages", function (request, response) {
 app.post("/messages", function (request, response) {
   response.json({ message: "Hello, World!" });
 });
-
-// Middleware to parse JSON in the request body
-app.use(express.json());
 
 //trial routing
 
@@ -36,7 +35,7 @@ app.get("/items", (req, res) => {
 
 //handling post request
 
-app.post("/items", (req, res) => {
+app.post("/new-items", (req, res) => {
   const newItem = req.body.stationary;
   stationary.push(newItem);
   res.json(stationary);

@@ -13,3 +13,8 @@ db.query(
   `INSERT INTO staff (staff_name, staff_role, productivity_rating, department, ai_replaced)
     VALUES ('Frankie', 'instructor', 50, 'digital innovation', false)`
 );
+
+db.query(
+  `INSERT INTO staff (staff_name, staff_role, productivity_rating, department, ai_replaced)
+    VALUES ('kevin', 'instructor', 50, 'digital innovation', false)`
+);

@@ -44,9 +44,6 @@ app.get("/staff", async (req, res) => {
 //We use the $ and a number --> $1, $2, $3...
 //Usually, the value replacing the parameter will come from the request
 app.get("/staff-1", (req, res) => {
-  const query = db.query(
-    `SELECT * FROM staff WHERE id = $1 AND staff_name = $2`,
-    [req.body.id, req.body.staffName]
-  );
+  const query = db.query(`SELECT * FROM staff WHERE id = $1`, [req.body.id]);
   res.json(query);
 });

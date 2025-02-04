@@ -13,15 +13,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
   display: flex;
@@ -49,10 +40,6 @@ h1 {
   border-color: #a94437;
   box-shadow: 3px 3px 3px 3px #d37b6f;
   filter: drop-shadow(0 0 2em #d4ac70aa);
-}
-#app:focus,
-#app:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
 .card {
