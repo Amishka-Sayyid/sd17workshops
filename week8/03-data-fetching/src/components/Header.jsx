@@ -15,6 +15,12 @@ export default function Header() {
           <button>
             <Link href={"/contact"}>Contact</Link>
           </button>
+          <button>
+            <Link href={"/posts"}>Posts</Link>
+          </button>
+          <button>
+            <Link href={"/postlist"}>Post list</Link>
+          </button>
         </nav>
       </div>
     </>
