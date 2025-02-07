@@ -1,0 +1,17 @@
+.header {
+  background: rgb(208, 225, 210);
+  min-height: 10vh;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+.navLink {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
