@@ -1,0 +1,46 @@
+.Header {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+.Header nav {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  text-align: center;
+  justify-content: center;
+}
+.Header button {
+  min-width: 4rem;
+  padding: 4px;
+  height: 2rem;
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  text-align: center;
+  background-color: blanchedalmond;
+}
+.Header button:hover {
+  background-color: aliceblue;
+}
+.Header h1 {
+  font-size: 1.7rem;
+}
+.Header::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(88, 97, 133);
+  margin-top: 10px;
+}
+footer::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(88, 97, 133);
+  margin-top: 10px;
+}
+
+footer {
+  font-size: 1.5rem;
+}
