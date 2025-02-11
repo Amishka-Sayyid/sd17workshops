@@ -1,4 +1,4 @@
-import { createRouteMatcher, clerkMiddleware } from "@clerk/nextjs";
+import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 
 const isProtectedRoute = createRouteMatcher(["/user-profile(.*)"]);
 

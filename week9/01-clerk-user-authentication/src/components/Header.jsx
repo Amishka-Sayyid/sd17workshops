@@ -13,7 +13,6 @@ export default function Header() {
     <>
       <div className="Header">
         <h1>Full Stack User Authentication with Clerk workshop</h1>
-        <p>{userId}</p>
 
         <div className="flex justify-around">
           <nav>
