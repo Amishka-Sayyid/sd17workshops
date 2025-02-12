@@ -1,0 +1,10 @@
+.birdsDiv {
+  display: flex;
+  background-color: rgb(58, 109, 58);
+  flex-direction: column;
+  align-items: center;
+}
+
+.birdsHeading {
+  font-size: 2rem;
+}

@@ -1,0 +1,31 @@
+import { db } from "@/utils/dbConnection";
+import { notFound } from "next/navigation";
+export default async function BirdNamePage({ params }) {
+  const birdParams = await params;
+  console.log(birdParams.bird_name);
+  const bird = await db.query(`SELECT * FROM birds WHERE bird_name = $1`, [
+    birdParams.bird_name,
+  ]);
+
+  const wrangledBird = bird.rows;
+
+  console.log(wrangledBird);
+
+  if (wrangledBird.length === 0) {
+    notFound();
+  }
+
+  return (
+    <>
+      {wrangledBird.map((oneBird) => (
+        <div key={oneBird.id} className="text-center">
+          <h1>Bird Name: {oneBird.bird_name}</h1>
+          <p>Size: {oneBird.bird_size}</p>
+          <p>Fluffiness: {oneBird.fluffiness}</p>
+          <p>Colour: {oneBird.bird_colour}</p>
+          <p>Personality: {oneBird.personality}</p>
+        </div>
+      ))}
+    </>
+  );
+}

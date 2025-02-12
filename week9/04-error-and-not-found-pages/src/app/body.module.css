@@ -1,0 +1,6 @@
+.body {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
