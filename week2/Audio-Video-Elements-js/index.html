@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="./script.js" defer></script>
+    <title>Images</title>
+  </head>
+  <body
+    style="
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      gap: 2rem;
+    "
+  >
+    <img
+      src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-169994-674010.jpg&fm=jpg"
+      alt="peacock feather"
+      height="300"
+      width="300"
+      object-fit="contain"
+    />
+    <br />
+    <input type="range" min="0" max="1" step="0.01" />
+    <br />
+    <audio src="./nature sounds.mp3" controls></audio>
+
+    <button style="width: 6rem">Play</button>
+
+    <button style="width: 6rem" id="pause">Pause</button>
+
+    <br />
+    <video
+      src="./Lots of Butterfly Flying in Flowers Garden  How Butterflies Pollinate Flowers_360P.mp4"
+      controls
+    ></video>
+  </body>
+</html>
