@@ -61,6 +61,12 @@ article img {
 
 article {
   flex: 1;
+  box-shadow: 10px 5px 5px grey;
+}
+
+.article2 {
+  flex: 1;
+  box-shadow: 0px 10px 10px grey;
 }
 
 aside {
