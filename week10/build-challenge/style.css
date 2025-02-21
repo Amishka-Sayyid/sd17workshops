@@ -10,6 +10,7 @@ header {
   align-content: center;
   justify-content: center;
   min-width: 100%;
+  padding: 10px;
 }
 header nav {
   min-width: 60%;
@@ -28,7 +29,42 @@ header nav a:hover {
   color: blueviolet;
 }
 
+/* footer */
+footer {
+  place-items: center;
+}
+
 /* main */
 main {
-  min-height: 70vh;
+  min-height: 100vh;
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+}
+
+.section1 {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 20px;
+  gap: 2rem;
+  box-shadow: 10px 5px 5px grey;
+}
+article h2 {
+  text-align: center;
+}
+article img {
+  object-fit: cover;
+  width: 100%;
+}
+
+article {
+  flex: 1;
+}
+
+aside {
+  flex: 1;
+  display: flex;
+  align-items: center;
 }
