@@ -67,3 +67,82 @@ async function display() {
 }
 
 display();
+
+// https://cookie-upgrade-api.vercel.app/api/upgrades
+
+// tring to fetch and render the the above in table format.
+
+async function getDetails() {
+  const result = await fetch(
+    "https://cookie-upgrade-api.vercel.app/api/upgrades"
+  );
+
+  const data = await result.json();
+
+  const wrangledCookie = data;
+
+  return wrangledCookie;
+}
+
+const cookie = document.getElementById("cookie");
+
+function createTable(cookieData) {
+  // creating the table
+  const table = document.createElement("table");
+
+  // create head for the table
+  let head = document.createElement("thead");
+
+  // create heading cells $ Insert data to cells
+
+  let h1 = document.createElement("th");
+  h1.innerText = "id";
+  let h2 = document.createElement("th");
+  h2.innerText = "name";
+  let h3 = document.createElement("th");
+  h3.innerText = "cost";
+  let h4 = document.createElement("th");
+  h4.innerText = "increase";
+
+  cookieData.forEach((single) => {
+    // creating the row element
+    let row = document.createElement("tr");
+
+    // append  cells to head
+    head.appendChild(h1);
+    head.appendChild(h2);
+    head.appendChild(h3);
+    head.appendChild(h4);
+
+    // Create cells & Insert data to cells
+    let c1 = document.createElement("td");
+    c1.innerText = single.id;
+    let c2 = document.createElement("td");
+    c2.innerText = single.name;
+    let c3 = document.createElement("td");
+    c3.innerText = single.cost;
+    let c4 = document.createElement("td");
+    c4.innerText = single.increase;
+
+    // Append cells to row
+    row.appendChild(c1);
+    row.appendChild(c2);
+    row.appendChild(c3);
+    row.appendChild(c4);
+
+    // 1st append table to the div cookie;
+    cookie.appendChild(table);
+    // Append head and row to table body
+
+    table.appendChild(head);
+    table.appendChild(row);
+  });
+}
+
+async function combine() {
+  const allTogether = await getDetails();
+
+  createTable(allTogether);
+}
+
+combine();
