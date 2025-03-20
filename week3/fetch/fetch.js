@@ -78,10 +78,7 @@ async function getDetails() {
   );
 
   const data = await result.json();
-
-  const wrangledCookie = data;
-
-  return wrangledCookie;
+  return data;
 }
 
 const cookie = document.getElementById("cookie");
@@ -104,15 +101,21 @@ function createTable(cookieData) {
   let h4 = document.createElement("th");
   h4.innerText = "increase";
 
+  // append  cells to head
+  head.appendChild(h1);
+  head.appendChild(h2);
+  head.appendChild(h3);
+  head.appendChild(h4);
+
+  // append the head to table
+  table.appendChild(head);
+
+  //   creating body for table
+  let body = document.createElement("tbody");
+
   cookieData.forEach((single) => {
     // creating the row element
     let row = document.createElement("tr");
-
-    // append  cells to head
-    head.appendChild(h1);
-    head.appendChild(h2);
-    head.appendChild(h3);
-    head.appendChild(h4);
 
     // Create cells & Insert data to cells
     let c1 = document.createElement("td");
@@ -130,13 +133,14 @@ function createTable(cookieData) {
     row.appendChild(c3);
     row.appendChild(c4);
 
-    // 1st append table to the div cookie;
-    cookie.appendChild(table);
-    // Append head and row to table body
-
-    table.appendChild(head);
-    table.appendChild(row);
+    // append row to body
+    body.appendChild(row);
   });
+  // Append the body to the table
+  table.appendChild(body);
+
+  // Append the table to the div "cookie"
+  cookie.appendChild(table);
 }
 
 async function combine() {
